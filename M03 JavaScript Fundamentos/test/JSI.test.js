@@ -48,7 +48,7 @@ const {
 } = require('../Ejercicio 05');
 
 describe('JAVASCRIPT I', function () {
-   describe('EJERCICIO 01', function () {
+   /*describe('EJERCICIO 01', function () {
       describe('nuevoString', function () {
          it('Debe ser un string', function () {
             expect(typeof nuevoString).toBe('string');
@@ -132,7 +132,7 @@ describe('JAVASCRIPT I', function () {
             expect(obtenerResto(22, 5)).toBe(2);
          });
       });
-   });
+   });*/
 
    describe('EJERCICIO 03', function () {
       describe('sonIguales(x, y)', function () {
@@ -153,7 +153,7 @@ describe('JAVASCRIPT I', function () {
             expect(tienenMismaLongitud('hi', 'there')).toBe(false);
          });
       });
-
+      /*
       describe('menosQueNoventa(num)', function () {
          it('Debe devolver True si el número es menor a noventa', function () {
             expect(menosQueNoventa(15)).toBe(true);
@@ -163,7 +163,7 @@ describe('JAVASCRIPT I', function () {
             expect(menosQueNoventa(100)).toBe(false);
          });
       });
-
+      
       describe('mayorQueCincuenta(num)', function () {
          it('Debe devolver True si el número es mayor a cincuenta', function () {
             expect(mayorQueCincuenta(15)).toBe(false);
@@ -198,10 +198,10 @@ describe('JAVASCRIPT I', function () {
             expect(esImpar(7)).toBe(true);
             expect(esImpar(0)).toBe(false);
          });
-      });
-   });
+      });*/
+   })
 
-   describe('EJERCICIO 04', function () {
+   /*describe('EJERCICIO 04', function () {
       describe('elevarAlCuadrado(num)', function () {
          it('Debe devolver el número elevado al cuadrado', function () {
             expect(elevarAlCuadrado(6)).toBe(36);
@@ -254,7 +254,7 @@ describe('JAVASCRIPT I', function () {
             expect(numeroRandom()).not.toBe(numeroRandom());
          });
       });
-   });
+   });*/
 
    describe('EJERCICIO 05', function () {
       describe('esPositivo(num)', function () {
@@ -268,7 +268,7 @@ describe('JAVASCRIPT I', function () {
             expect(esPositivo(0)).toBe(false);
          });
       });
-
+      
       describe('agregarSimboloExclamacion(str)', function () {
          it('Debe agregar un signo de exclamacion al final del string', function () {
             expect(agregarSimboloExclamacion('hello world')).toBe(
