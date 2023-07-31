@@ -35,31 +35,63 @@ function menosQueNoventa(num) {
    // Retorna true si el argumento "num" es menor que noventa.
    // De lo contrario, retorna false.
    // Tu código:
-   return false;
+   
+      if (num < 90) {
+
+      return true
+   } 
+
+   else {
+
+      return false;
+}
 }
 
 function mayorQueCincuenta(num) {
    // Retorna true si el argumento "num" es mayor que cincuenta.
    // De lo contrario, retorna false.
    // Tu código:
-   return false;
+
+  if (num >50){
+
+   return true;
+
+  } 
+  
+  else {
+
+    return false;
 }
+}
+
 
 function esPar(num) {
    // Retorna true si "num" es par.
    // De lo contrario, retorna false.
    // Tu código:
+   if (num % 2===0) {
+
    return true;
+  }  
+  else {
+   return false;
+}  
 }
 
-function esImpar(num) {
+
+function esImpar(num)   
    // Retorna true si "num" es impar.
    // De lo contrario, retorna false.
    // Tu código:
-   return false;
+   if ("num esImpar") {
+
+      return true
+
+   } else {
+
+   return false
 }
 
-console.log("Retorno de la funcion",tienenMismaLongitud("matematicas","matematicas"));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
