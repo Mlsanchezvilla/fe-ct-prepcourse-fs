@@ -38,7 +38,7 @@ function menosQueNoventa(num) {
    
       if (num < 90) {
 
-      return true
+      return true;
    } 
 
    else {
@@ -83,7 +83,7 @@ function esImpar(num)
    // Retorna true si "num" es impar.
    // De lo contrario, retorna false.
    // Tu código:
-   if ("num esImpar") {
+   if (num % 2 ===0) {
 
       return true
 
