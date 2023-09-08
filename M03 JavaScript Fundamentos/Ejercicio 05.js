@@ -26,7 +26,7 @@ function agregarSimboloExclamacion(str) {
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
       
-       return str +"!"
+       return str +"!";
 
 }
 
@@ -34,40 +34,40 @@ function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   return nombre +" "+ apellido
+   return nombre +" "+ apellido;
 }
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return "Hola " + nombre + "!"
+   return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
-   return alto * ancho
+   return alto * ancho;
 } 
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
-   return lado * 4
+   return lado * 4;
 }
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-   return (base * altura) / 2 
+   return (base * altura) / 2;
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return euro * 1.20
+   return euro * 1.20;
    
 }
 
@@ -76,8 +76,7 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   vocales = ['a', 'e', 'i', 'o', 'u']
-   if(vocales.includes(letra)){
+   if (letra === "a" || letra === "e" || letra === "i" || letra ==="o" || letra === "u") {
       return "Es vocal"
    } else {
       return "Dato incorrecto"
