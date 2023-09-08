@@ -119,6 +119,10 @@ function deleteAbc(string) {
    // Retorna el string sin estas letras.
    // Tu código:
 
+   return string.replace(/[abc]/g, " ");
+
+
+
 
 }
 
