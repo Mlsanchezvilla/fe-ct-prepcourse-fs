@@ -6,20 +6,15 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
-
-   var claves = Objeto.keys(objeto);
-
+   var claves = Object.keys(objeto);
    var arregloDeArreglos = [];
 
    for (var clave of claves) {
-
       var valor = objeto[clave];
-      var parClaveValor=[clave,valor];
-      arregloDeArreglos.push(parClavevalor);
+      var parClaveValor = [clave, valor];
+      arregloDeArreglos.push(parClaveValor);
    }
-return arregloDeArreglos;
-
-    
+   return arregloDeArreglos;
 }
 
 function numberOfCharacters(string) {
@@ -29,28 +24,28 @@ function numberOfCharacters(string) {
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
 
-   var count  = {};
+   var count = {};
 
    for (let i = 0; i < string.length; i++) {
 
-      var letra=string[i];
-     
+      var letra = string[i];
+
       if (count[letra]) {
          count[letra]++;
       } else {
-         count[letra]=1;
+         count[letra] = 1;
       }
 
    }
 
    var sortedCount = {};
 
-   Object.keys(count).sort().forEach(function(key) {
-      sortedCount[key]= count [key];
+   Object.keys(count).sort().forEach(function (key) {
+      sortedCount[key] = count[key];
    });
 
    return sortedCount;
-   
+
 }
 
 function capToFront(string) {
@@ -60,24 +55,23 @@ function capToFront(string) {
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
 
-  var mayuscula = [];
-  var minúscula = [];
+   var mayusculas = [];
+   var minusculas = [];
 
-  for (let i=0; i <string.length; i++) {
+   for (let i = 0; i < string.length; i++) {
 
-   var letra = string[i];
-   if(letra === letra.toUpperCase()) {
-      mayusculas.push(letra);
+      var letra = string[i];
+      if (letra === letra.toUpperCase()) {
+         mayusculas.push(letra);
 
-   } else {
-      minusculas.push(letra);
+      } else {
+         minusculas.push(letra);
+      }
    }
-}
 
-var resultado = mayusculas.join(" ") + minusculas.join(" ");
-return resultado;
+   var resultado = mayusculas.join("") + minusculas.join("");
+   return resultado;
 }
-
 
 
 function asAmirror(frase) {
@@ -87,31 +81,27 @@ function asAmirror(frase) {
    // Tu código:
 
    var palabras = frase.split(" ");
+   var resultado = palabras.map(palabra => palabra.split("").reverse().join(""));
 
-   function invertirPalabra(palabra) {
-      return palabra.split(" ").reverse().join("");
-   }
- var resultado = palabras.map(invertirPalabra).join(" ");
-
- return resultado;
+   return resultado.join(" ");
 }
-
 function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
 
-    var numeroString = numero.toString();
+   var numeroString = numero.toString();
+   console.log(numeroString);
 
-    var numeroReverso = numeroString.split(" ").reverse().join(" ");
+   var numeroReverso = numeroString.split("").reverse().join("");
+   console.log(numeroReverso);
 
 
-    if(numeroString === numeroReverso) {
+   if (numeroString === numeroReverso) {
       return "Es capicua";
-
-    } else {
+   } else {
       return "No es capicua";
-    }
+   }
 }
 
 function deleteAbc(string) {
@@ -119,11 +109,7 @@ function deleteAbc(string) {
    // Retorna el string sin estas letras.
    // Tu código:
 
-   return string.replace(/[abc]/g, " ");
-
-
-
-
+   return "";
 }
 
 function sortArray(arrayOfStrings) {
@@ -133,9 +119,9 @@ function sortArray(arrayOfStrings) {
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
 
- var resultado = arrayOfStrings.sort((a,b) => a.length - b.length);
+   var resultado = arrayOfStrings.sort((a, b) => a.length - b.length);
 
- return resultado; 
+   return resultado;
 }
 
 function buscoInterseccion(array1, array2) {
@@ -148,15 +134,14 @@ function buscoInterseccion(array1, array2) {
 
    var interseccion = [];
 
-   for ( var elemento1 of array1) {
-      for(var  elemento2 of array2) {
+   for (var elemento1 of array1) {
+      for (var elemento2 of array2) {
          if (elemento1 === elemento2) {
             interseccion.push(elemento1);
             break;
          }
       }
    }
-
    return interseccion;
 }
 

@@ -12,9 +12,8 @@ function crearUsuario() {
    // Tu código:
 
 
-   function Usuario(Usuario, nombre, email, password) {
-   
-    this.Usuario = Usuario;
+   function Usuario(usuario, nombre, email, password) {
+    this.usuario = usuario;
     this.nombre = nombre;
     this.email = email; 
     this.password = password;
@@ -22,15 +21,12 @@ function crearUsuario() {
    }
 
    Usuario.prototype.saludar=function() {
-      return "Hola mi nombre es ${this.nombre}";
+      return `Hola, mi nombre es ${this.nombre}`;
    }
 
+   return Usuario
+
 }
-
-//para crear la instancia de Usuario:
-
-var Usuario1= new Usuario ("miUsuario", "mi nombre", "mi email","mi contraseña");
-console.log(Usuario1.saludar());
 
 
 function agregarMetodoPrototype(Usuario) {
@@ -38,8 +34,8 @@ function agregarMetodoPrototype(Usuario) {
    // El método debe llamarse "saludar" y debe devolver el string "Hello World!".
    // Tu código:
 
-   Usuario.prototype.saludar= function(){
-      return "Hello world!";
+   Usuario.prototype.saludar = function(){
+      return "Hello World!";
    }
 
 }
